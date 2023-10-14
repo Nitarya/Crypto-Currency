@@ -16,7 +16,7 @@ useEffect(() => {
 }, []);
 
 return (
-  <div>
+  <div className="App">
     <h1>All cryptocurrencies</h1>
     <input
     type="text"
@@ -45,14 +45,14 @@ return (
           return (
             <div>
               <tr id={id}>
-                <td>{val.rank}</td>
-                <td>
+                <td className="rank">{val.rank}</td>
+                <td className="logo">
                   <a href={val.websiteUrl}>
                     <img src={val.icon} alt="logo" width="30px" />
                   </a>
                   <p>{val.name}</p>
                 </td>
-                <td>{val.symbol}</td>
+                <td className="symbol">{val.symbol}</td>
                 <td>{val.marketCap}</td>
                 <td>{val.price.toFixed(2)}</td>
                 <td>{val.availableSupply}</td>
