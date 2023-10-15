@@ -43,7 +43,6 @@ return (
         })
         .map((val, id) => {
           return (
-            <div>
               <tr id={id}>
                 <td className="rank">{val.rank}</td>
                 <td className="logo">
@@ -58,7 +57,6 @@ return (
                 <td>{val.availableSupply}</td>
                 <td>{val.volume.toFixed(0)}</td>
               </tr>
-            </div>
           )
         })
         }
